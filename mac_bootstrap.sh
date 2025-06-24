@@ -82,7 +82,7 @@ echo "Setting global Python version to $PYTHON_VERSION..."
 pyenv global "$PYTHON_VERSION"
 
 echo "Upgrading pip..."
-pip install --upgrade pip
+python3 -m pip install --upgrade pip
 
 # Install PyCharm if not installed manually or by brew
 if [ ! -d "/Applications/Pycharm.app" ] && ! brew list --cask pycharm &>/dev/null; then
